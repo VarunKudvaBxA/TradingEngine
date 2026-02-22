@@ -1,3 +1,5 @@
+What I understood from this project:
+
 High-Throughput Transaction Processing Engine for a trading desk. It simulates how financial institutions handle large volumes of trades in real time.
 
 The system: Loads trade requests from a CSV file. Validates trades. Processes trades concurrently using threads. Persists trades into a relational database (H2 in-memory DB).
