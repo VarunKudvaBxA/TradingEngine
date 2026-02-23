@@ -16,6 +16,8 @@ Separation of concerns: Models, services, persistence, reporting
 
 Persistence means saving data so it survives beyond the program’s runtime. Without persistence, once the program ends, all trade data would be lost.
 Persistence ensures that trades can be queried later, audited, or used for reporting. We use JDBC with prepared statements to insert trades into the database safely.
-
+Having
 SQL Injection is a security vulnerability where malicious input is used to manipulate database queries. 
 To prevent it, we use PreparedStatement with placeholders (?) instead of concatenating strings.
+
+Have used H2 DB over PostgreSQL because of its features: light weight and fast, zero setup needed, portable and sql compatibility. It is good for testing.
