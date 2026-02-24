@@ -27,7 +27,7 @@ public class Main {
                 processor.processTrade(trade);
             });
         }
-        Thread.sleep(2000); // wait for threads
+        Thread.sleep(2000);
         processor.shutdown();
         reportGenerator.generateReport(portfolioManager.getPortfolios());
     }
